@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+body {
+  font-family: "Plus Jakarta Sans";
+  padding-top: 3rem;
+  background-color: var(--Very-light-grayish-blue);
+}
+
+.container {
+  background-color: var(--White);
+  border-radius: 10px;
+  margin: auto;
+  padding: 30px;
+  width: 90%;
+  max-width: 800px;
+}
+.container .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.container .header .left {
+  display: flex;
+  align-items: center;
+}
+.container .header .left h1 {
+  font-weight: 800;
+}
+.container .header .left p {
+  display: block;
+  background-color: var(--Blue);
+  border-radius: 5px;
+  padding: 5px 13px;
+  color: var(--White);
+  margin-left: 20px;
+  font-weight: 800;
+}
+.container .header .right button {
+  border: none;
+  background-color: var(--White);
+  color: var(--Dark-grayish-blue);
+  cursor: pointer;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1rem;
+  font-weight: 500;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+.container .header .right button:hover {
+  color: var(--Blue);
+}
+.container .notifications .notification {
+  background-color: var(--White);
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.container .notifications .notification .content {
+  display: flex;
+  align-items: flex-start;
+}
+.container .notifications .notification .content img {
+  width: 60px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.container .notifications .notification .content .text-box p {
+  color: var(--Grayish-blue);
+  position: relative;
+  display: inline;
+}
+.container .notifications .notification .content .text-box p strong {
+  color: black;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.container .notifications .notification .content .text-box p strong:hover {
+  color: var(--Blue);
+}
+.container .notifications .notification .content .text-box p a {
+  color: var(--Blue);
+  text-decoration: none;
+  font-weight: 800;
+}
+.container .notifications .notification .content .text-box p b {
+  color: var(--Dark-grayish-blue);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.container .notifications .notification .content .text-box p b:hover {
+  color: var(--Blue);
+}
+.container .notifications .notification .content .text-box small {
+  color: var(--Grayish-blue);
+  font-weight: 500;
+}
+.container .notifications .notification .content .text-box .private-message {
+  border: 1px solid var(--Grayish-blue);
+  color: var(--Dark-grayish-blue);
+  font-weight: 500;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 15px;
+  transition: all 0.2s ease-in-out;
+}
+.container .notifications .notification .content .text-box .private-message:hover {
+  border-color: var(--Light-grayish-blue-1);
+  background-color: var(--Light-grayish-blue-1);
+  cursor: pointer;
+}
+.container .notifications .notification .picture img {
+  width: 60px;
+  cursor: pointer;
+}
+
+.non-read {
+  background-color: var(--Very-light-grayish-blue) !important;
+}
+
+.non-read-text ::before {
+  content: "";
+  background-color: var(--Red);
+  border-radius: 100%;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  right: -13px;
+  bottom: 5px;
+}
+
+small {
+  display: block;
+}
+
+.attribution {
+  margin: 50px auto;
+  max-width: 500px;
+  padding: 10px;
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+}/*# sourceMappingURL=styles.css.map */
